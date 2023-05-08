@@ -44,23 +44,26 @@ include('fn/conexion.php');
                         //$result=mysqli_query("SELECT * FROM afiliados_grupo WHERE afiliados_grupo.nro_doc = '$_REQUEST[user]' ");				
                     }
 
-                    $row = mysqli_fetch_array($result);
 
-                    $dni = $_REQUEST['user'];
 
-                    if ($row['sis'] == "P") {
-                        $sistema = "Prepaga";
-                    };
-
-                    if ($row['sis'] == "C") {
-                        $sistema = "Coseguro";
-                    };
-
-                    if ($row['sis'] == "O") {
-                        $sistema = "Obra Social";
-                    };
 
                     if (mysqli_num_rows($result) > 0) {
+
+                        $row = mysqli_fetch_array($result);
+
+                        $dni = $row['nro_doc'];
+
+                        if ($row['sis'] == "P") {
+                            $sistema = "Prepaga";
+                        };
+
+                        if ($row['sis'] == "C") {
+                            $sistema = "Coseguro";
+                        };
+
+                        if ($row['sis'] == "O") {
+                            $sistema = "Obra Social";
+                        };
                     ?>
 
                         <h3 class="mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style display-2">
@@ -112,20 +115,21 @@ include('fn/conexion.php');
                                                 </div>
                                             <?PHP } ?>
                                         <?PHP } ?>
+                                        </body>
 
-                                    <?PHP    } else { ?>
+                                    <?PHP } else { ?>
                                         <h3 class="mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style display-2">
                                             Afiliado no encontrado</h3>
                                         <p class="mbr-text pb-3 mbr-fonts-style display-5">Vuelva a ingresar el n&uacute;mero</p>
                                         <div class="mbr-section-btn"><a class="btn btn-md btn-info display-4" href="ingreso.php">Volver</a></div>
-                                    <?PHP    } ?>
+                                    <?PHP } ?>
+                                </form>
+
+                                </form>
+                            </body>
                 </div>
             </div>
         </div>
-
-
-
-
     </section>
 
 

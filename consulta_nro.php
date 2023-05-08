@@ -1,3 +1,6 @@
+<?PHP
+include('fn/conexion.php'); ?>
+
 <script>
 	function envio() {
 		document.formu.submit()
@@ -5,12 +8,11 @@
 </script>
 
 <?PHP
-include('fn/conexion.php');
 
 $result = mysqli_query($conexion, "SELECT * FROM ti_turnos WHERE ti_turnos.tipo = '$_REQUEST[tipo]' order by tipo,id DESC limit 1 ");
-$row = mysqli_fetch_array($result);
 
 if (mysqli_num_rows($result) > 0) {
+	$row = mysqli_fetch_array($result);
 	$id_nro  = $row['id'] + 1;
 } else {
 	$id_nro  =  1;

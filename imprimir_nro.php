@@ -1,3 +1,6 @@
+<?PHP
+include('fn/conexion.php');
+?>
 <!DOCTYPE HTML>
 <!--	Auto Gestion de Afiliados COLMED salud-->
 <html>
@@ -78,7 +81,7 @@
 <body onLoad="imprimir();">
     <div id="noprint">
         <?PHP
-        require('fn/conexion.php');
+        //require('fn/conexion.php');
         $credencial = $_REQUEST['user'];
         $dni = $_REQUEST['dni']; ?>
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
