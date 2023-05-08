@@ -18,7 +18,7 @@
 </head>
 
 <div align="center">
-	<a href="index.html" target="_parent"><img src="imagenes/logo.png" alt="COLMED SALUD" width="60%" /></a>
+	<a href="index.html" target="_parent"><img src="imagenes/logo.png" alt="COLMED SALUD" width="20%" /></a>
 </div>
 
 <script>
@@ -27,7 +27,7 @@
 	}
 </script>
 
-<body background="assets\images\mbr-1920x1279.jpg">
+<body background="assets\images\bg_exa02.png">
 	<div align="center">
 		<?PHP
 		$dni = $_REQUEST['dni'];
