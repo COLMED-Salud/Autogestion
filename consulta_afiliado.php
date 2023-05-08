@@ -32,18 +32,18 @@
                     <?PHP
                     include('fn/conexion.php');
 
-                    if (strlen($_POST['user']) > 8) {
+                    if (strlen($_REQUEST['user']) > 8) {
 
-                        $credencial_tit = substr($_POST['user'], 0, 10) . "00";
+                        $credencial_tit = substr($_REQUEST['user'], 0, 10) . "00";
                         //echo $credencial_tit;
                         $result = mysqli_query($conexion, "SELECT * FROM afiliados WHERE afiliados.credencial = '$credencial_tit' AND afiliados.abm != 'Baja' ");
                     } else {
-                        $result = mysqli_query($conexion, "SELECT * FROM afiliados WHERE afiliados.nro_doc = '$_POST[user]' AND afiliados.abm != 'Baja' ");
-                        //$result=mysqli_query("SELECT * FROM afiliados_grupo WHERE afiliados_grupo.nro_doc = '$_POST[user]' ");				
+                        $result = mysqli_query($conexion, "SELECT * FROM afiliados WHERE afiliados.nro_doc = '$_REQUEST[user]' AND afiliados.abm != 'Baja' ");
+                        //$result=mysqli_query("SELECT * FROM afiliados_grupo WHERE afiliados_grupo.nro_doc = '$_REQUEST[user]' ");				
                     }
                     $row = mysqli_fetch_array($result);
 
-                    $dni = $_POST['user'];
+                    $dni = $_REQUEST['user'];
                     if ($row['sis'] == "P") {
                         $sistema = "Prepaga";
                     };

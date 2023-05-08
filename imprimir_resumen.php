@@ -80,8 +80,8 @@
         <?PHP
         require('fn/conexion.php');
         require_once('barcode/barcode.inc.php');
-        $credencial = $_GET['user'];
-        $dni = $_GET['dni']; ?>
+        $credencial = $_REQUEST['user'];
+        $dni = $_REQUEST['dni']; ?>
         <table width="100%" border="0" cellspacing="2" cellpadding="2">
             <tr>
                 <td colspan="3" align="center"><a href="index.html" target="_parent"><img src="imagenes/logo.png" alt="COLMED" width="30%" /></a></td>
@@ -116,7 +116,7 @@
     </div>
     <?PHP
     //consulta 
-    $result = mysqli_query($conexion, "SELECT * FROM fac_cabecera WHERE fac_cabecera.cpte_int=$_GET[cpte];");
+    $result = mysqli_query($conexion, "SELECT * FROM fac_cabecera WHERE fac_cabecera.cpte_int=$_REQUEST[cpte];");
     while ($datos = mysqli_fetch_array($result)) {
         $total = $datos["totalf"];
         $cred = $datos["credencial"];
@@ -129,8 +129,8 @@
         $per = substr($datos["fec_vig"], 5, 2) . '/' . substr($datos["fec_vig"], 0, 4);
         $vto = implode('/', array_reverse(explode('-', $datos["fec_vto"])));
         $vig = implode('/', array_reverse(explode('-', $datos["fec_vig"])));
-        $img = "temp/" . $_GET['cpte'] . ".gif";
-        $result2 = mysqli_query($conexion, "SELECT * FROM fac_detalle WHERE fac_detalle.cpte_int=$_GET[cpte];"); ?>
+        $img = "temp/" . $_REQUEST['cpte'] . ".gif";
+        $result2 = mysqli_query($conexion, "SELECT * FROM fac_detalle WHERE fac_detalle.cpte_int=$_REQUEST[cpte];"); ?>
 
         <table width="250" border="0" cellspacing="2" cellpadding="2" align="center">
             <tr>

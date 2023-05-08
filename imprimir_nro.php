@@ -79,8 +79,8 @@
     <div id="noprint">
         <?PHP
         require('fn/conexion.php');
-        $credencial = $_GET['user'];
-        $dni = $_GET['dni']; ?>
+        $credencial = $_REQUEST['user'];
+        $dni = $_REQUEST['dni']; ?>
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tr>
                 <td colspan="3" align="center"><a href="index.html" target="_parent"><img src="imagenes/logo.png" alt="COLMED" width="30%" /></a></td>
@@ -98,7 +98,7 @@
 
             <tr>
                 <td colspan="3" align="center" style="font-size:15px">
-                    <?PHP if ($_GET['tipo'] != 'C') { ?>
+                    <?PHP if ($_REQUEST['tipo'] != 'C') { ?>
                         <br>
                         Record&aacute; que tambi&eacute;n pod&eacute;s realizar<br>
                         autorizaciones desde tu email<br>
@@ -127,7 +127,7 @@
     </div>
     <?PHP
     //consulta 
-    $result = mysqli_query($conexion, "SELECT * FROM ti_turnos WHERE ti_turnos.tipo = '$_GET[tipo]' order by tipo,id DESC limit 1");
+    $result = mysqli_query($conexion, "SELECT * FROM ti_turnos WHERE ti_turnos.tipo = '$_REQUEST[tipo]' order by tipo,id DESC limit 1");
     while ($datos = mysqli_fetch_array($result)) { ?>
 
         <table width="250" border="0" cellspacing="2" cellpadding="2" align="center" style="font-family:Arial, Helvetica, sans-serif">

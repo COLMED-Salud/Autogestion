@@ -6,10 +6,10 @@
 
 <body onload="envio()">
     <?PHP
-    $usuario = $_GET['usuario'];
-    $puesto  = $_GET['puesto'];
-    $tipo    = $_GET['tipo'];
-    $id      = $_GET['id'];
+    $usuario = $_REQUEST['usuario'];
+    $puesto  = $_REQUEST['puesto'];
+    $tipo    = $_REQUEST['tipo'];
+    $id      = $_REQUEST['id'];
     if ($puesto == '' or $usuario == '') {
     ?>
         <script>

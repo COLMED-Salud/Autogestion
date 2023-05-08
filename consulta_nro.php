@@ -7,7 +7,7 @@
 <?PHP
 include('fn/conexion.php');
 
-$result = mysqli_query($conexion, "SELECT * FROM ti_turnos WHERE ti_turnos.tipo = '$_GET[tipo]' order by tipo,id DESC limit 1 ");
+$result = mysqli_query($conexion, "SELECT * FROM ti_turnos WHERE ti_turnos.tipo = '$_REQUEST[tipo]' order by tipo,id DESC limit 1 ");
 $row = mysqli_fetch_array($result);
 
 if (mysqli_num_rows($result) > 0) {
@@ -17,11 +17,11 @@ if (mysqli_num_rows($result) > 0) {
 }
 
 putenv("TZ=America/Argentina/San_Juan");
-$id_tipo = $_GET['tipo'];
+$id_tipo = $_REQUEST['tipo'];
 $actual = date("Y-m-d H:i:s");
 $periodo_a = date('Y');
 $periodo_m = date('m');
-$credencial = $_GET['user'];
+$credencial = $_REQUEST['user'];
 $nuevo = mysqli_query($conexion, "INSERT INTO ti_turnos
 (`tipo`, `id`, `periodo_a`, `periodo_m`, `fecha` , `credencial`)
 VALUES ('$id_tipo', '$id_nro', '$periodo_a', '$periodo_m', '$actual', '$credencial')");

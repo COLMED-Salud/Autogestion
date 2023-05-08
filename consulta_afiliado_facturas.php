@@ -30,9 +30,9 @@
 <body background="assets\images\mbr-1920x1279.jpg">
 	<div align="center">
 		<?PHP
-		$dni = $_GET['dni'];
+		$dni = $_REQUEST['dni'];
 		include('fn/conexion.php');
-		$result = mysqli_query($conexion, "SELECT * FROM fac_cabecera WHERE credencial = $_GET[user]");
+		$result = mysqli_query($conexion, "SELECT * FROM fac_cabecera WHERE credencial = $_REQUEST[user]");
 		if (mysqli_fetch_array($result) > 0) { ?>
 
 			<table class="tabla" border="0" align="center" width="100%" background="imagenes/fondo_bt.png">
