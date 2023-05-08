@@ -1,0 +1,107 @@
+@charset "utf-8";
+/* CSS Document */
+.button
+	{
+		vertical-align:central;
+		background-color: #68AD0C;
+		text-decoration: none;
+		text-align:  center;
+		color: #FFFFFF;
+		border:hidden; 
+		cursor:pointer;
+		padding: 10px;
+		border-radius: 10px;
+	}
+.button:hover { background-color:#999; }
+
+.buttoni
+	{
+		vertical-align:central;
+		background-color:#09C;
+		text-decoration:none;
+		text-align:center;
+		font-size:14px;
+		color: #FFFFFF;
+		border:hidden; 
+		cursor:pointer;
+		padding: 10px;
+		border-radius: 0px;
+	}
+.buttoni:hover { background-color:#999; }
+
+.buttone
+	{
+		vertical-align:central;
+		background-color:#3E4095;
+		text-decoration:none;
+		text-align:center;
+		font-size:10px;
+		color: #FFFFFF;
+		border:hidden; 
+		cursor:pointer;
+		padding: 12px;
+		border-radius: 0px;
+	}
+.buttone:hover { background-color:#999; }
+
+.buttonc
+	{
+		vertical-align:central;
+		background-color:#FF9900;
+		text-decoration:none;
+		text-align:center;
+		font-size:14px;
+		color: #FFFFFF;
+		border:hidden; 
+		cursor:pointer;
+		padding: 10px;
+		border-radius: 0px;
+	}
+.buttonc:hover { background-color:#999; }
+
+.buttond
+	{
+		vertical-align:central;
+		background-color: #68AD0C;
+		text-decoration: none;
+		text-align:  center;
+		color: #FFFFFF;
+		border:hidden; 
+		cursor:pointer;
+		padding: 10px;
+		border-radius: 0px;
+	}
+.buttond:hover { background-color:#999; }
+
+body {
+	/**background-image:url(../imagenes/fondo.jpg); */
+	background-color:#FFF;
+	font-family:Arial;
+}
+
+.text {
+	border-radius: 0px;
+	text-align: center;
+}
+
+.table
+{
+	font-family:"Arial Black";
+}
+
+#rotator {
+border: 0px solid #000000;
+overflow: hidden;
+margin: 0px ;
+padding:0px;
+position: relative;
+width: 1250px;
+height: 240px;
+}
+#rotator img {
+width: 1250px;
+height: 240px; 
+border: 0;
+margin: 0;
+padding: 0;
+}
