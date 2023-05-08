@@ -1,3 +1,6 @@
+<?PHP
+include('fn/conexion.php');
+?>
 <!DOCTYPE html>
 <html>
 
@@ -30,7 +33,6 @@
                 <div class="mbr-white col-md-10">
 
                     <?PHP
-                    include('fn/conexion.php');
 
                     if (strlen($_REQUEST['user']) > 8) {
 
@@ -41,9 +43,11 @@
                         $result = mysqli_query($conexion, "SELECT * FROM afiliados WHERE afiliados.nro_doc = '$_REQUEST[user]' AND afiliados.abm != 'Baja' ");
                         //$result=mysqli_query("SELECT * FROM afiliados_grupo WHERE afiliados_grupo.nro_doc = '$_REQUEST[user]' ");				
                     }
+
                     $row = mysqli_fetch_array($result);
 
                     $dni = $_REQUEST['user'];
+
                     if ($row['sis'] == "P") {
                         $sistema = "Prepaga";
                     };

@@ -16,16 +16,16 @@
     </div>
 
     <?PHP
-    if ($_REQUEST) {
-        $cadena = $_REQUEST['dni'];
-        if ($_REQUEST['boton'] == "Ingresar") {
-            $cadena = $_REQUEST['dni']; ?>
+    if ($_POST) {
+        $cadena = $_POST['dni'];
+        if ($_POST['boton'] == "Ingresar") {
+            $cadena = $_POST['dni']; ?>
     <?PHP
         } else {
-            $cadena = '' . $_REQUEST['dni'] . '' . $_REQUEST['boton'] . '';
+            $cadena = '' . $_POST['dni'] . '' . $_POST['boton'] . '';
         }
 
-        if ($_REQUEST['borrar'] == "Borrar") {
+        if ($_POST['borrar'] == "Borrar") {
             $cadena = substr($cadena, 0, -1);
             /*$cadena = '';*/
         }
@@ -72,7 +72,7 @@
         <th colspan="3" align="center">
             <form action="consulta_afiliado.php" method="POST">
                 <input style="font-size:28px;width:100%" type="submit" name="boton" value="Ingresar" class="button" />
-                <input type="hidden" name="aftip" value="<? echo $_REQUEST['aftip'] ?>" />
+                <input type="hidden" name="aftip" value="<? echo $_POST['aftip'] ?>" />
                 <input type="hidden" name="user" value="<? echo $cadena; ?>" />
             </form>
         </th>

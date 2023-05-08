@@ -1,3 +1,6 @@
+<?PHP
+include('fn/conexion.php');
+?>
 <!DOCTYPE HTML>
 <!--	Auto Gestion de Afiliados COLMED salud-->
 <html>
@@ -31,7 +34,6 @@
 	<div align="center">
 		<?PHP
 		$dni = $_REQUEST['dni'];
-		include('fn/conexion.php');
 		$result = mysqli_query($conexion, "SELECT * FROM fac_cabecera WHERE credencial = $_REQUEST[user]");
 		if (mysqli_fetch_array($result) > 0) { ?>
 
