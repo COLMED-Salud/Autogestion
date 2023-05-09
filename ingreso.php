@@ -72,8 +72,8 @@
         <th colspan="3" align="center">
             <form action="consulta_afiliado.php" method="POST">
                 <input style="font-size:30px;width:100%" type="submit" name="boton" value="Ingresar" class="button" />
-                <input type="hidden" name="aftip" value="<? echo $_POST['aftip'] ?>" />
-                <input type="hidden" name="user" value="<? echo $cadena; ?>" />
+                <input type="hidden" name="aftip" value="<?PHP echo $_POST['aftip'] ?>" />
+                <input type="hidden" name="user" value="<?PHP echo $cadena; ?>" />
             </form>
         </th>
     </tr>

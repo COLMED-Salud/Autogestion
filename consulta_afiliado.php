@@ -44,9 +44,6 @@ include('fn/conexion.php');
                         //$result=mysqli_query("SELECT * FROM afiliados_grupo WHERE afiliados_grupo.nro_doc = '$_REQUEST[user]' ");				
                     }
 
-
-
-
                     if (mysqli_num_rows($result) > 0) {
 
                         $row = mysqli_fetch_array($result);
@@ -111,7 +108,8 @@ include('fn/conexion.php');
                                                         Resumen de Cuenta
                                                     </a> -->
                                                     <br>
-                                                    <a class="btn btn-md btn-white-outline display-4" href="menu.php">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Salir&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <a class="btn btn-md btn-white-outline display-4" href="menu.php">
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Salir&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                     </a>
                                                 </div>
                                             <?PHP } ?>
