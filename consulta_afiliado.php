@@ -98,18 +98,19 @@ include('fn/conexion.php');
                                                     <a class="btn btn-md btn-info display-4" href="consulta_nro.php?tipo=A&user=<? echo $row["credencial"]; ?>&dni=<? echo $dni; ?>">
                                                         Turno Autorizaciones
                                                     </a>
-
+                                                    <br>
                                                     <a class="btn btn-md btn-primary display-4" href="consulta_nro.php?tipo=V&user=<? echo $row["credencial"]; ?>&dni=<? echo $dni; ?>">
                                                         &nbsp;&nbsp;&nbsp;&nbsp;Otras Gestiones&nbsp;&nbsp;&nbsp;&nbsp;
                                                     </a>
-
+                                                    <br>
                                                     <a class="btn btn-md btn-warning display-4" href="consulta_afiliado_facturas.php?user=<? echo $row["credencial"]; ?>&dni=<? echo $dni; ?>">
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Talón de Pago&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mis Facturas&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                     </a>
 
-                                                    <a class="btn btn-md btn-warning display-4" href="consulta_afiliado_resumen.php?user=<? echo $row["credencial"]; ?>&dni=<? echo $dni; ?>">
+                                                    <!-- <a class="btn btn-md btn-warning display-4" href="consulta_afiliado_resumen.php?user=<? echo $row["credencial"]; ?>&dni=<? echo $dni; ?>">
                                                         Resumen de Cuenta
-                                                    </a>
+                                                    </a> -->
+                                                    <br>
                                                     <a class="btn btn-md btn-white-outline display-4" href="menu.php">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Salir&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                     </a>
                                                 </div>

@@ -47,23 +47,23 @@
                 </tr>
 
                 <tr>
-                    <th><input type="submit" name="boton" value="7" class="button" style="font-size:28px;width:100%" /></th>
-                    <th><input type="submit" name="boton" value="8" class="button" style="font-size:28px;width:100%" /></th>
-                    <th><input type="submit" name="boton" value="9" class="button" style="font-size:28px;width:100%" /></th>
+                    <th><input type="submit" name="boton" value="7" class="button" style="font-size:30px;width:100%" /></th>
+                    <th><input type="submit" name="boton" value="8" class="button" style="font-size:30px;width:100%" /></th>
+                    <th><input type="submit" name="boton" value="9" class="button" style="font-size:30px;width:100%" /></th>
                 </tr>
                 <tr>
-                    <th><input type="submit" name="boton" value="4" class="button" style="font-size:28px;width:100%" /></th>
-                    <th><input type="submit" name="boton" value="5" class="button" style="font-size:28px;width:100%" /></th>
-                    <th><input type="submit" name="boton" value="6" class="button" style="font-size:28px;width:100%" /></th>
+                    <th><input type="submit" name="boton" value="4" class="button" style="font-size:30px;width:100%" /></th>
+                    <th><input type="submit" name="boton" value="5" class="button" style="font-size:30px;width:100%" /></th>
+                    <th><input type="submit" name="boton" value="6" class="button" style="font-size:30px;width:100%" /></th>
                 </tr>
                 <tr>
-                    <th><input type="submit" name="boton" value="1" class="button" style="font-size:28px;width:100%" /></th>
-                    <th><input type="submit" name="boton" value="2" class="button" style="font-size:28px;width:100%" /></th>
-                    <th><input type="submit" name="boton" value="3" class="button" style="font-size:28px;width:100%" /></th>
+                    <th><input type="submit" name="boton" value="1" class="button" style="font-size:30px;width:100%" /></th>
+                    <th><input type="submit" name="boton" value="2" class="button" style="font-size:30px;width:100%" /></th>
+                    <th><input type="submit" name="boton" value="3" class="button" style="font-size:30px;width:100%" /></th>
                 </tr>
                 <tr>
-                    <th><input type="submit" name="boton" value="0" class="button" style="font-size:28px;width:100%" /></th>
-                    <th colspan="2" align="center"><input style="font-size:22px;width:100%" type="submit" name="borrar" value="Borrar" class="button" />
+                    <th><input type="submit" name="boton" value="0" class="button" style="font-size:30px;width:100%" /></th>
+                    <th colspan="2" align="center"><input style="font-size:24px;width:100%" type="submit" name="borrar" value="Borrar" class="button" />
     </form>
     </th>
     </tr>
@@ -71,7 +71,7 @@
     <tr>
         <th colspan="3" align="center">
             <form action="consulta_afiliado.php" method="POST">
-                <input style="font-size:28px;width:100%" type="submit" name="boton" value="Ingresar" class="button" />
+                <input style="font-size:30px;width:100%" type="submit" name="boton" value="Ingresar" class="button" />
                 <input type="hidden" name="aftip" value="<? echo $_POST['aftip'] ?>" />
                 <input type="hidden" name="user" value="<? echo $cadena; ?>" />
             </form>
@@ -80,7 +80,7 @@
 
     <tr>
         <th colspan="3" align="center">
-            <input style="font-size:28px;width:100%" type='button' value='Volver' onClick="location.replace('menu.php');" class="button" />
+            <input style="font-size:30px;width:100%" type='button' value='Volver' onClick="location.replace('menu.php');" class="button" />
         </th>
     </tr>
     <tr>

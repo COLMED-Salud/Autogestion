@@ -38,27 +38,30 @@
 			<table class="tabla" border="0" align="center" width="100%" background="imagenes/fondo_bt.png">
 				<thead>
 					<tr align="center">
-						<th colspan="5" style="font-size:20px" align="center" bgcolor="#99CC00">
-							<font color="#FFFFFF"><b>Impresi&oacute;n de tal&oacute;n de pago</b></font>
+						<th colspan="6" style="font-size:20px" align="center" bgcolor="#99CC00">
+							<font color="#FFFFFF"><b>Mis Facturas</b></font>
 						</th>
 					</tr>
 				</thead>
 				<thead>
 					<tr align="center">
-						<th style="font-size:10px" align="center" bgcolor="#999999">
+						<th style="font-size:14px" align="center" bgcolor="#999999">
 							<font color="#FFFFFF"><b>&nbsp;Factura Nro.&nbsp;</b></font>
 						</th>
-						<th style="font-size:10px" align="center" bgcolor="#999999">
-							<font color="#FFFFFF"><b>&nbsp;Periodo&nbsp;</b></font>
+						<th style="font-size:14px" align="center" bgcolor="#999999">
+							<font color="#FFFFFF"><b>&nbsp;Fecha&nbsp;</b></font>
 						</th>
-						<th style="font-size:10px" align="center" bgcolor="#999999">
+						<th style="font-size:14px" align="center" bgcolor="#999999">
 							<font color="#FFFFFF"><b>&nbsp;Vto.&nbsp;</b></font>
 						</th>
-						<th style="font-size:10px" align="center" bgcolor="#999999">
+						<th style="font-size:14px" align="center" bgcolor="#999999">
 							<font color="#FFFFFF"><b>&nbsp;Importe&nbsp;</b></font>
 						</th>
-						<th style="font-size:10px" align="center" bgcolor="#999999">
-							<font color="#FFFFFF"><b>&nbsp;Tal&oacute;n&nbsp;</b></font>
+						<th style="font-size:14px" align="center" bgcolor="#999999">
+							<!-- <font color="#FFFFFF"><b>&nbsp;Tal&oacute;n&nbsp;</b></font> -->
+						</th>
+						<th style="font-size:14px" align="center" bgcolor="#999999">
+							<!-- <font color="#FFFFFF"><b>&nbsp;Tal&oacute;n&nbsp;</b></font> -->
 						</th>
 					</tr>
 				</thead>
@@ -66,20 +69,28 @@
 				while ($row = mysqli_fetch_array($result)) { ?>
 					<tbody>
 						<tr align="center">
-							<td style="font-size:10px;background-color:rgba(0, 0, 0, 0);" align="center">
+
+							<td style="font-size:14px;background-color:rgba(0, 0, 0, 0);" align="center">
 								<?PHP echo str_pad($row["fac_suc"], 4, "0", STR_PAD_LEFT) . "-" . str_pad($row["fac_nro"], 8, "0", STR_PAD_LEFT); ?></td>
 
-							<td style="font-size:10px" align="center"><?PHP echo implode('/', array_reverse(explode('-', $row["fac_fec"]))); ?></td>
+							<td style="font-size:14px" align="center"><?PHP echo implode('/', array_reverse(explode('-', $row["fac_fec"]))); ?></td>
 
-							<td style="font-size:10px" align="center"><?PHP echo implode('/', array_reverse(explode('-', $row["fec_vto"]))); ?></td>
+							<td style="font-size:14px" align="center"><?PHP echo implode('/', array_reverse(explode('-', $row["fec_vto"]))); ?></td>
 
-							<td style="font-size:10px" align="center"><?PHP echo '$' . $row["totalf"]; ?></td>
+							<td style="font-size:14px" align="center"><?PHP echo '$' . $row["totalf"]; ?></td>
 
-							<td style="font-size:10px" align="center">
+							<td style="font-size:14px" align="center">
 								<?PHP if ($row["estado"] == "Pendiente") {
+
+									$link = "www.colmedsanjuan.com.ar/afiliados/aquicobro/crear-orden-cobro.php?cpto=" . str_pad($row['fac_nro'], 8, '0', STR_PAD_LEFT) . "&tip=F&ref=" . $row['cpte_int'] . "&imp=" . $row['totalf'] . "&vto=" . $row['fec_vig'];
+
 									if (!empty($row["cod_facil"])) { ?>
-										<input style="font-size:10px;width:80%" type='buttond' value='Imprimir' onClick="location.replace('imprimir_talon.php?cpte=<?PHP echo $row["cpte_int"]; ?>&user=<?PHP echo $row["credencial"]; ?>&dni=<? echo $dni; ?>');" class="button" />
 									<?PHP } ?>
+
+									<form action="qrcode/generar.php" method="POST">
+										<input type="hidden" value="<?PHP echo $link; ?>" name="data">
+										<input style="font-size:14px;width:100%" type="submit" value="&nbsp;&nbsp;&nbsp;Pagar&nbsp;&nbsp;&nbsp;" class="button" />
+									</form>
 
 									<?PHP } else {
 									if ($row["estado"] == "Cancelada") { ?>
@@ -92,9 +103,18 @@
 								<?PHP } ?>
 
 							</td>
+							<td style="font-size:14px" align="center">
+								<?PHP if ($row["estado"] == "Pendiente") {
+
+									if (!empty($row["cod_facil"])) { ?>
+										<input style="font-size:14px;width:auto" type='buttond' value='Imprimir' onClick="location.replace('imprimir_talon.php?cpte=<?PHP echo $row["cpte_int"]; ?>&user=<?PHP echo $row["credencial"]; ?>&dni=<? echo $dni; ?>');" class="button" />
+									<?PHP } ?>
+								<?PHP } ?>
+
+							</td>
 						</tr>
 					<?PHP } ?>
-					<td colspan="5" style="font-size:12px" align="center" bgcolor="#FF6600">
+					<td colspan="6" style="font-size:12px" align="center" bgcolor="#FF6600">
 						<font color="#FFFFFF">
 							Pod&eacute;s abonar tu factura s&oacute;lo con el DNI en:<br>
 							<b>SAN JUAN SERVICIOS</b> y <b>PAGO F&Aacute;CIL</b>

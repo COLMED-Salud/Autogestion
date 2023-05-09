@@ -22,7 +22,7 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
  */
 
-echo "<h1>Escanear el QR Para Pagar</h1><hr/>";
+echo "<div align='center'><h1>Escanear el QR Para Pagar</h1><hr/>";
 
 //set it to writable location, a place for temp generated PNG files
 $PNG_TEMP_DIR = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'temp' . DIRECTORY_SEPARATOR;
@@ -45,12 +45,16 @@ $errorCorrectionLevel = 'H';
 if (isset($_REQUEST['level']) && in_array($_REQUEST['level'], array('L', 'M', 'Q', 'H')))
     $errorCorrectionLevel = $_REQUEST['level'];
 
-$matrixPointSize = 9;
+$matrixPointSize = 5;
 if (isset($_REQUEST['size']))
     $matrixPointSize = min(max((int)$_REQUEST['size'], 1), 10);
 
-
 if (isset($_REQUEST['data'])) {
+
+    // $link = "www.colmedsanjuan.com.ar/afiliados/aquicobro/crear-orden-cobro.php";
+    // $_REQUEST['data'] = $link . $_REQUEST['data'];
+
+    // echo "<hr/>" . $_REQUEST['data'] . "<hr/>";
 
     //it's very important!
     if (trim($_REQUEST['data']) == '')
@@ -88,3 +92,5 @@ echo '<img src="' . $PNG_WEB_DIR . basename($filename) . '" />';
 
 // benchmark
 //QRtools::timeBenchmark();
+
+echo "<hr/><input type='button' style='font-size:32px;width:80%'' value='Volver' onClick='history.go(-1);'></div>";
