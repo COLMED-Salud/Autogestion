@@ -181,6 +181,17 @@
 }
 
 
+.button-primary:hover,
+.button-secondary:hover,
+.button-success:hover,
+.button-danger:hover,
+.button-warning:hover,
+.button-info:hover,
+.button-light:hover,
+.button-dark:hover {
+	background-color: #999;
+}
+
 body {
 	/**background-image:url(../imagenes/fondo.jpg); */
 	background-color: #FFF;
