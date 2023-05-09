@@ -89,7 +89,7 @@
 
 									<form action="qrcode/generar.php" method="POST">
 										<input type="hidden" value="<?PHP echo $link; ?>" name="data">
-										<input style="font-size:14px;width:100%" type="submit" value="&nbsp;&nbsp;&nbsp;Pagar&nbsp;&nbsp;&nbsp;" class="button" />
+										<input style="font-size:14px;width:100%" type="submit" value="&nbsp;&nbsp;&nbsp;Pagar&nbsp;&nbsp;&nbsp;" class="button-warning" />
 									</form>
 
 									<?PHP } else {
@@ -107,14 +107,14 @@
 								<?PHP if ($row["estado"] == "Pendiente") {
 
 									if (!empty($row["cod_facil"])) { ?>
-										<input style="font-size:14px;width:auto" type='buttond' value='Imprimir' onClick="location.replace('imprimir_talon.php?cpte=<?PHP echo $row["cpte_int"]; ?>&user=<?PHP echo $row["credencial"]; ?>&dni=<? echo $dni; ?>');" class="button" />
+										<input style="font-size:14px;width:auto" type='buttond' value='Imprimir' onClick="location.replace('imprimir_talon.php?cpte=<?PHP echo $row["cpte_int"]; ?>&user=<?PHP echo $row["credencial"]; ?>&dni=<? echo $dni; ?>');" class="button-info" />
 									<?PHP } ?>
 								<?PHP } ?>
 
 							</td>
 						</tr>
 					<?PHP } ?>
-					<td colspan="6" style="font-size:12px" align="center" bgcolor="#FF6600">
+					<td colspan="6" style="font-size:12px" align="center" bgcolor="#FF6600" opacity="0.6">
 						<font color="#FFFFFF">
 							Pod&eacute;s abonar tu factura s&oacute;lo con el DNI en:<br>
 							<b>SAN JUAN SERVICIOS</b> y <b>PAGO F&Aacute;CIL</b>
