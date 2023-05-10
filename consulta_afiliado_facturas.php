@@ -27,7 +27,7 @@
 	}
 </script>
 
-<body background="assets\images\bg_exa02.png">
+<body background="assets\images\bg_exa01.jpg">
 	<div align="center">
 		<?PHP
 		$dni = $_REQUEST['dni'];
