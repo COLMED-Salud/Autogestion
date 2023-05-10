@@ -6,7 +6,7 @@
     <!--<META HTTP-EQUIV="Refresh" CONTENT="20; URL=index.html">-->
     <META HTTP-EQUIV="Refresh" CONTENT="20; URL=menu.php">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="stylesheet" href="css/estilo.css" TYPE="text/css" MEDIA=screen />
+    <link rel="stylesheet" href="assets/css/estilo.css" TYPE="text/css" MEDIA=screen />
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Autogestion de Afiliados</title>
 

@@ -9,7 +9,7 @@ include('fn/conexion.php');
 	<!--<META HTTP-EQUIV="Refresh" CONTENT="50; URL=index.html">-->
 	<META HTTP-EQUIV="Refresh" CONTENT="50; URL=menu.php">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<link rel="stylesheet" href="css/estilo.css" TYPE="text/css" MEDIA=screen />
+	<link rel="stylesheet" href="assets/css/estilo.css" TYPE="text/css" MEDIA=screen />
 	<title>Autogestion de Afiliados</title>
 	<link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
 	<link rel="stylesheet" href="assets/tether/tether.min.css">

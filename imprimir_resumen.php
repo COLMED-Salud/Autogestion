@@ -5,7 +5,7 @@
 <head>
     <META HTTP-EQUIV="Refresh" CONTENT="20; URL=menu.php">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="stylesheet" href="css/estilo.css" TYPE="text/css" MEDIA=screen />
+    <link rel="stylesheet" href="assets/css/estilo.css" TYPE="text/css" MEDIA=screen />
     <title>Autogestion de Afiliados</title>
 
     <script type="text/javascript">

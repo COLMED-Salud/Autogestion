@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="refresh" content="6">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="stylesheet" href="css/estilobase.css" TYPE="text/css" MEDIA=screen />
+    <link rel="stylesheet" href="assets/css/estilobase.css" TYPE="text/css" MEDIA=screen />
     <title>Turnos</title>
 </head>
 
