@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
 	<link rel="stylesheet" href="assets/theme/css/style.css">
 	<link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
 </head>
 
@@ -107,7 +108,8 @@
 								<?PHP if ($row["estado"] == "Pendiente") {
 
 									if (!empty($row["cod_facil"])) { ?>
-										<input style="font-size:14px;width:auto" type='buttond' value='Imprimir' onClick="location.replace('imprimir_talon.php?cpte=<?PHP echo $row["cpte_int"]; ?>&user=<?PHP echo $row["credencial"]; ?>&dni=<? echo $dni; ?>');" class="button-info" />
+										<input style="font-size:14px;width:auto" type='button' value='Imprimir' onClick="location.replace('imprimir_talon.php?cpte=<?PHP echo $row["cpte_int"]; ?>&user=<?PHP echo $row["credencial"]; ?>&dni=<? echo $dni; ?>');" class="button-info" />
+										<button><i class="fa-regular fa-print"></i></button>
 									<?PHP } ?>
 								<?PHP } ?>
 
