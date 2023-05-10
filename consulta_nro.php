@@ -46,7 +46,7 @@ VALUES ('$id_tipo', '$id_nro', '$periodo_a', '$periodo_m', '$actual', '$credenci
 		//location.replace("index.php");
 	</script>
     <div align="center">
-    <img src="imagenes/icon_atencion.png" alt="Atencion" width="10%"/><br>
+    <img src="assets\images\icon_atencion.png" alt="Atencion" width="10%"/><br>
     <font size="1">No se encontraron datos!</font>
     <hr>
 	<input type ='button' value = 'Volver' onClick="location.replace('menu.php');" class="button"/>

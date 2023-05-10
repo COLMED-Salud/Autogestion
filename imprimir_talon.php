@@ -88,7 +88,7 @@
         $dni = $_REQUEST['dni']; ?>
         <table width="100%" border="0" cellspacing="2" cellpadding="2" align="center">
             <tr>
-                <td colspan="3" align="center"><a href="index.html" target="_parent"><img src="imagenes/logo.png" alt="COLMED" width="30%" /></a></td>
+                <td colspan="3" align="center"><a href="index.html" target="_parent"><img src="assets\images\logo.png" alt="COLMED" width="30%" /></a></td>
             </tr>
 
             <tr>
@@ -96,11 +96,11 @@
             </tr>
 
             <tr>
-                <td colspan="3" align="center"><img src="imagenes/mediosdepago.png" alt="COLMED" width="100%" /></td>
+                <td colspan="3" align="center"><img src="assets\images\mediosdepago.png" alt="COLMED" width="100%" /></td>
             </tr>
 
             <tr>
-                <td colspan="3" align="center"><img src="imagenes/mediosdepago2.png" alt="COLMED" width="100%" /></td>
+                <td colspan="3" align="center"><img src="assets\images\mediosdepago2.png" alt="COLMED" width="100%" /></td>
             </tr>
 
             <tr>
@@ -121,7 +121,7 @@
             </tr>
 
             <tr>
-                <td colspan="3" align="center"><img src="imagenes/flechaabajo.gif" alt="TICKET" width="30%" /></td>
+                <td colspan="3" align="center"><img src="assets\images\flechaabajo.gif" alt="TICKET" width="30%" /></td>
             </tr>
 
         </table>
@@ -149,7 +149,7 @@
 
         <table width="270" border="0" cellspacing="2" cellpadding="2">
             <tr>
-                <td colspan="3" align="center"><img src="imagenes/logo.png" alt="COLMED" width="150" />
+                <td colspan="3" align="center"><img src="assets\images\logo.png" alt="COLMED" width="150" />
                     <hr>
                 </td>
             </tr>

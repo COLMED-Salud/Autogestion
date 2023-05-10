@@ -86,7 +86,7 @@ include('fn/conexion.php');
         $dni = $_REQUEST['dni']; ?>
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tr>
-                <td colspan="3" align="center"><a href="index.html" target="_parent"><img src="imagenes/logo.png" alt="COLMED" width="30%" /></a></td>
+                <td colspan="3" align="center"><a href="index.html" target="_parent"><img src="assets\images\logo.png" alt="COLMED" width="30%" /></a></td>
             </tr>
 
             <tr>
@@ -113,7 +113,7 @@ include('fn/conexion.php');
                         Ser&aacute;s atendido por uno<br>
                         de nuestros assesores comerciales<br>
                         <br>
-                        <!--img src="imagenes/banner0004.jpg" alt="AVISO AFILIADOS" width="100%"/ -->
+                        <!--img src="assets\images\banner0004.jpg" alt="AVISO AFILIADOS" width="100%"/ -->
                     <?PHP } ?>
                 </td>
             </tr>
@@ -122,7 +122,7 @@ include('fn/conexion.php');
             </tr>
 
             <tr>
-                <td colspan="3" align="center"><img src="imagenes/flechaabajo.gif" alt="TICKET" width="60%" /></td>
+                <td colspan="3" align="center"><img src="assets\images\flechaabajo.gif" alt="TICKET" width="60%" /></td>
             </tr>
         </table>
         <br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>

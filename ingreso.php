@@ -12,7 +12,7 @@
 
 <body background="assets\images\mbr-1920x1279.jpg">
     <div align="center">
-        <a href="index.html" target="_parent"><img src="imagenes/logo.png" alt="COLMED SALUD" width="30%" /></a>
+        <a href="index.html" target="_parent"><img src="assets\images\logo.png" alt="COLMED SALUD" width="30%" /></a>
     </div>
 
     <?PHP
@@ -35,7 +35,7 @@
         <div align="center">
             <table>
                 <tr>
-                    <th colspan="3" style="font-size:12px" align="center" background="imagenes/fondo_bt.png">
+                    <th colspan="3" style="font-size:12px" align="center" background="assets\images\fondo_bt.png">
                         <font color="#000000">Ingrese DNI o Credencial del Titular:</font>
                     </th>
                 </tr>
@@ -84,7 +84,7 @@
         </th>
     </tr>
     <tr>
-        <th colspan="3" style="font-size:15px" align="center" background="imagenes/fondo_bt.png">
+        <th colspan="3" style="font-size:15px" align="center" background="assets\images\fondo_bt.png">
             <font color="#000000"><b>Si no conoce el DNI del Titular <br>
                     Puede ingresar su N&uacute;mero de Credencial</b></font>
         </th>

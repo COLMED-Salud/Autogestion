@@ -1,39 +1,41 @@
 @charset "utf-8";
-/* CSS Document */
-.button
-	{
-		vertical-align:central;
-		background-color: #68AD0C;
-		text-decoration: none;
-		text-align:  center;
-		color: #FFFFFF;
-		border:hidden; 
-		cursor:pointer;
-		padding: 10px;
-		border-radius: 0px;
-	}
-.button:hover { background-color:#999; }
 
-.button2
-	{
-		vertical-align:central;
-		background-color:#999;
-		text-decoration:none;
-		text-align:center;
-		font-size:14px;
-		color: #FFFFFF;
-		border:hidden; 
-		cursor:pointer;
-		padding: 10px;
-		border-radius: 0px;
-		width:100%:
-	}
+/* CSS Document */
+.button {
+	vertical-align: central;
+	background-color: #68AD0C;
+	text-decoration: none;
+	text-align: center;
+	color: #FFFFFF;
+	border: hidden;
+	cursor: pointer;
+	padding: 10px;
+	border-radius: 0px;
+}
+
+.button:hover {
+	background-color: #999;
+}
+
+.button2 {
+	vertical-align: central;
+	background-color: #999;
+	text-decoration: none;
+	text-align: center;
+	font-size: 14px;
+	color: #FFFFFF;
+	border: hidden;
+	cursor: pointer;
+	padding: 10px;
+	border-radius: 0px;
+	width: 100%:
+}
 
 
 body {
-	/* background-image:url(../imagenes/fondo.jpg); */
-	background-color:#999;
-	font-family:Arial;
+	/* background-image:url(../assets\images\fondo.jpg); */
+	background-color: #999;
+	font-family: Arial;
 }
 
 .text {
@@ -41,8 +43,6 @@ body {
 	text-align: center;
 }
 
-.table
-{
-	font-family:"Arial Black";
+.table {
+	font-family: "Arial Black";
 }
-

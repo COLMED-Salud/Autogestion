@@ -26,7 +26,7 @@
     <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(35, 35, 35);"></div>
 
     <div class="container align-center">
-      <a href="#"><img src="imagenes/logo_colmed_b.png" alt="COLMED SALUD" width="50%" /></a>
+      <a href="#"><img src="assets\images\logo_colmed_b.png" alt="COLMED SALUD" width="50%" /></a>
       <div class="row justify-content-md-center">
         <div class="mbr-white col-md-10">
 

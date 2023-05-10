@@ -84,7 +84,7 @@
         $dni = $_REQUEST['dni']; ?>
         <table width="100%" border="0" cellspacing="2" cellpadding="2">
             <tr>
-                <td colspan="3" align="center"><a href="index.html" target="_parent"><img src="imagenes/logo.png" alt="COLMED" width="30%" /></a></td>
+                <td colspan="3" align="center"><a href="index.html" target="_parent"><img src="assets\images\logo.png" alt="COLMED" width="30%" /></a></td>
             </tr>
 
             <tr>
@@ -108,7 +108,7 @@
             </tr>
 
             <tr>
-                <td colspan="3" align="center"><img src="imagenes/flechaabajo.gif" alt="TICKET" width="60%" /></td>
+                <td colspan="3" align="center"><img src="assets\images\flechaabajo.gif" alt="TICKET" width="60%" /></td>
             </tr>
         </table>
         <br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>

@@ -63,18 +63,18 @@
 
             <?PHP } ?>
             <tr style="font-size:70px" align="center">
-                <td <?PHP if ($llamar == '1') { ?>background="imagenes/llamado.gif" bgcolor="#FF0000" <?PHP } else { ?> bgcolor="#FFFF66" <?PHP } ?>>
+                <td <?PHP if ($llamar == '1') { ?>background="assets\images\llamado.gif" bgcolor="#FF0000" <?PHP } else { ?> bgcolor="#FFFF66" <?PHP } ?>>
                     <b><?PHP echo $ctrl["tipo"] . str_pad($ctrl["id"], 4, "0", STR_PAD_LEFT); ?><br>
                         <font size="6"><?PHP echo $nomafil; ?></font>
                     </b>
                 </td>
 
-                <td <?PHP if ($llamar == '1') { ?>background="imagenes/llamado.gif" bgcolor="#FF0000" <?PHP } else { ?> bgcolor="#FFFF66" <?PHP } ?>>
+                <td <?PHP if ($llamar == '1') { ?>background="assets\images\llamado.gif" bgcolor="#FF0000" <?PHP } else { ?> bgcolor="#FFFF66" <?PHP } ?>>
                     <b><?PHP echo $ctrl["puesto"]; ?></b>
                 </td>
 
-                <td style="font-size:30px" <?PHP if ($llamar == '1') { ?>background="imagenes/llamado.gif" bgcolor="#FF0000" <?PHP
-                                                                                                                            } else { ?> bgcolor="#FFFF66" <?PHP } ?>>
+                <td style="font-size:30px" <?PHP if ($llamar == '1') { ?>background="assets\images\llamado.gif" bgcolor="#FF0000" <?PHP
+                                                                                                                                } else { ?> bgcolor="#FFFF66" <?PHP } ?>>
                     <b><?PHP if ($ctrl["tipo"] == 'C') { ?> Comercial <?PHP } else { ?> Atenci&oacute;n Afiliados <?PHP } ?></b>
                 </td>
             </tr>

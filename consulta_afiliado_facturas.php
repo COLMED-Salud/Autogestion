@@ -18,7 +18,7 @@
 </head>
 
 <div align="center">
-	<a href="index.html" target="_parent"><img src="imagenes/logo.png" alt="COLMED SALUD" width="20%" /></a>
+	<a href="index.html" target="_parent"><img src="assets\images\logo.png" alt="COLMED SALUD" width="20%" /></a>
 </div>
 
 <script>
@@ -35,7 +35,7 @@
 		$result = mysqli_query($conexion, "SELECT * FROM fac_cabecera WHERE credencial = $_REQUEST[user]");
 		if (mysqli_fetch_array($result) > 0) { ?>
 
-			<table class="tabla" border="0" align="center" width="100%" background="imagenes/fondo_bt.png">
+			<table class="tabla" border="0" align="center" width="100%" background="assets\images\fondo_bt.png">
 				<thead>
 					<tr align="center">
 						<th colspan="6" style="font-size:20px" align="center" bgcolor="#99CC00">
@@ -128,7 +128,7 @@
 
 		<?PHP  } else { ?>
 			<div align="center">
-				<img src="imagenes/icon_atencion.png" alt="Atencion" width="20%" /> <br>
+				<img src="assets\images\icon_atencion.png" alt="Atencion" width="20%" /> <br>
 				<font color="#FF0000" size="1">No hay facturas para mostrar</font><br>
 				<font color="#000000" size="1">Usted no posee facturas generadas en los ultimos 3 meses.</font>
 			</div>
