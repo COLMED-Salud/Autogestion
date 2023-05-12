@@ -1,3 +1,6 @@
+<?PHP
+include('fn/conexion.php');
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -24,7 +27,7 @@
                 </td>
             </thead>
 
-            <?PHP include('fn/conexion.php');
+            <?PHP
             /*$result=mysqli_query("SELECT * FROM ti_turnos WHERE ti_turnos.puesto != '' AND ti_turnos.id != 0 order by id_row DESC limit 1 "); 
 		 $result=mysqli_query("SELECT * FROM ti_turnos_mae WHERE ti_turnos_mae.id != 0 limit 1 ");
          $turnos=mysqli_fetch_array($result);
@@ -85,10 +88,10 @@
                 <td>PUESTO</td>
                 <td>SECTOR</td>
             </tr>
-            <?PHP include('fn/conexion.php');
-            $consulta2 = mysqli_query($conexion, "SELECT * FROM ti_turnos WHERE ti_turnos.puesto != '' AND ti_turnos.id != 0 order by llamado DESC limit 3 ");
-            while ($turnos2 = mysqli_fetch_array($consulta2)) { ?>
-                <tr <?PHP if ($turnos2["tipo"] == 'C') { ?> bgcolor="#FFFFFF" <?PHP } else { ?> bgcolor="#FFFFFF" <?PHP } ?> style="font-size:30px" align="center">
+            <?PHP
+            $listado = mysqli_query($conexion, "SELECT * FROM ti_turnos WHERE ti_turnos.puesto != '' AND ti_turnos.id != 0 order by llamado DESC limit 3 ");
+            while ($turnoslist = mysqli_fetch_array($listado)) { ?>
+                <tr <?PHP if ($turnoslist["tipo"] == 'C') { ?> bgcolor="#FFFFFF" <?PHP } else { ?> bgcolor="#FFFFFF" <?PHP } ?> style="font-size:30px" align="center">
                     <td><b><?PHP echo $turnos2["tipo"] . str_pad($turnos2["id"], 4, "0", STR_PAD_LEFT); ?></b>
                     </td>
 
