@@ -109,7 +109,6 @@
 
 									if (!empty($row["cod_facil"])) { ?>
 										<input style="font-size:14px;width:auto" type='button' value='Imprimir' onClick="location.replace('imprimir_talon.php?cpte=<?PHP echo $row["cpte_int"]; ?>&user=<?PHP echo $row["credencial"]; ?>&dni=<? echo $dni; ?>');" class="button-info" />
-										<button><i class="fa-regular fa-print"></i></button>
 									<?PHP } ?>
 								<?PHP } ?>
 
