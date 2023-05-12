@@ -90,16 +90,16 @@ include('fn/conexion.php');
             </tr>
             <?PHP
             $listado = mysqli_query($conexion, "SELECT * FROM ti_turnos WHERE ti_turnos.puesto != '' AND ti_turnos.id != 0 order by llamado DESC limit 3 ");
-            while ($turnoslist = mysqli_fetch_array($listado)) { ?>
-                <tr <?PHP if ($turnoslist["tipo"] == 'C') { ?> bgcolor="#FFFFFF" <?PHP } else { ?> bgcolor="#FFFFFF" <?PHP } ?> style="font-size:30px" align="center">
-                    <td><b><?PHP echo $turnos2["tipo"] . str_pad($turnos2["id"], 4, "0", STR_PAD_LEFT); ?></b>
+            while ($turnos = mysqli_fetch_array($listado)) { ?>
+                <tr <?PHP if ($turnos["tipo"] == 'C') { ?> bgcolor="#FFFFFF" <?PHP } else { ?> bgcolor="#FFFFFF" <?PHP } ?> style="font-size:30px" align="center">
+                    <td><b><?PHP echo $turnos["tipo"] . str_pad($turnos["id"], 4, "0", STR_PAD_LEFT); ?></b>
                     </td>
 
-                    <td><b><?PHP echo $turnos2['puesto'] ?></b>
+                    <td><b><?PHP echo $turnos['puesto'] ?></b>
                     </td>
 
                     <td><b>
-                            <?PHP if ($turnos2["tipo"] == 'C') { ?> Comercial <?PHP } else { ?> Atenci&oacute;n Afiliados <?PHP } ?></b>
+                            <?PHP if ($turnos["tipo"] == 'C') { ?> Comercial <?PHP } else { ?> Atenci&oacute;n Afiliados <?PHP } ?></b>
                     </td>
                 </tr>
             <?PHP } ?>
