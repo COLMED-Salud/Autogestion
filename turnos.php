@@ -55,13 +55,13 @@ include('fn/conexion.php');
                 $actualiza = mysqli_query($conexion, "UPDATE ti_turnos_mae SET `llamar` = '0' "); ?>
 
                 <audio>
-                    <audio src="audio/doorbell.mp3" autoplay="true"></audio>
+                    <audio src="assets/audio/doorbell.mp3" autoplay="true"></audio>
                 </audio>
                 <!-- audio autoplay="true" preload="auto">          
-         	<source src="audio/doorbell.opus">
-         	<source src="audio/doorbell.ogg">
-         	<source src="audio/doorbell.mp3">
-         	<source src="audio/doorbell.wav">
+         	<source src="assets/audio/doorbell.opus">
+         	<source src="assets/audio/doorbell.ogg">
+         	<source src="assets/audio/doorbell.mp3">
+         	<source src="assets/audio/doorbell.wav">
          </audio -->
 
             <?PHP } ?>
