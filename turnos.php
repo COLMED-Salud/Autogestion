@@ -89,7 +89,7 @@ include('fn/conexion.php');
                 <td>SECTOR</td>
             </tr>
             <?PHP
-            $listado = mysqli_query($conexion, "SELECT * FROM ti_turnos WHERE ti_turnos.puesto != '' AND ti_turnos.id != 0 order by llamado DESC limit 3 ");
+            $listado = mysqli_query($conexion, "SELECT * FROM ti_turnos WHERE ti_turnos.puesto != '' AND ti_turnos.id != 0 order by llamado DESC limit 6 ");
             while ($turnos = mysqli_fetch_array($listado)) { ?>
                 <tr <?PHP if ($turnos["tipo"] == 'C') { ?> bgcolor="#FFFFFF" <?PHP } else { ?> bgcolor="#FFFFFF" <?PHP } ?> style="font-size:30px" align="center">
                     <td><b><?PHP echo $turnos["tipo"] . str_pad($turnos["id"], 4, "0", STR_PAD_LEFT); ?></b>
