@@ -213,13 +213,15 @@ body {
 	margin: 0px;
 	padding: 0px;
 	position: relative;
-	width: 1350px;
-	height: 340px;
+	width: 1200px;
+	height: 302px;
+	/* width: 1350px;
+	height: 340px; */
 }
 
 #rotator img {
-	width: 1350px;
-	height: 340px;
+	width: 1200px;
+	height: 302px;
 	border: 0;
 	margin: 0;
 	padding: 0;
