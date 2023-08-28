@@ -15,7 +15,7 @@ include('fn/conexion.php');
 
     <div id="turnos">
         <table width="100%" style="font-family:'Arial', Gadget, sans-serif" cellpadding="4">
-            <thead bgcolor="#000" style="font-size:28px" align="center">
+            <thead bgcolor="#00000" style="font-size:28px" align="center">
                 <td>
                     <font color="#FFFFFF"><b>TURNO </b></font>
                 </td>
@@ -92,7 +92,7 @@ include('fn/conexion.php');
 
             $listado = mysqli_query($conexion, "SELECT * FROM ti_turnos WHERE ti_turnos.puesto != '' AND ti_turnos.id != 0 AND date(ti_turnos.fecha) = CURDATE() order by llamado DESC limit 6 ");
             while ($turnos = mysqli_fetch_array($listado)) { ?>
-                <tr <?PHP if ($turnos["tipo"] == 'C') { ?> bgcolor="#FFFFFF" <?PHP } else { ?> bgcolor="#FFFFFF" <?PHP } ?> style="font-size:30px" align="center">
+                <tr <?PHP if ($turnos["tipo"] == 'C') { ?> bgcolor="#FFFFFF" <?PHP } else { ?> bgcolor="#DDDDDD" <?PHP } ?> style="font-size:30px" align="center">
                     <td><b><?PHP echo $turnos["tipo"] . str_pad($turnos["id"], 4, "0", STR_PAD_LEFT); ?></b>
                     </td>
 
