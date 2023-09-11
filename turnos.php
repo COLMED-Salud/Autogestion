@@ -15,6 +15,9 @@ include('fn/conexion.php');
 
     <div id="turnos">
         <table width="100%" style="font-family:'Arial', Gadget, sans-serif" cellpadding="4">
+            <thead>
+                <td colspan="3"></td>
+            </thead>
             <thead bgcolor="#00000" style="font-size:28px" align="center">
                 <td>
                     <font color="#FFFFFF"><b>TURNO </b></font>
