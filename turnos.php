@@ -16,11 +16,12 @@ include('fn/conexion.php');
     <div id="turnos">
         <table width="100%" style="font-family:'Arial', Gadget, sans-serif" cellpadding="4">
             <thead>
-                <td colspan="3" align="center">
-                    <img src="assets\images\logo.png" alt="COLMED Salud" width="20%" />
+                <td colspan="3" style="font-size:30px" align="center">
+                    <b>COLMED Salud</b>
+                    <!-- <img src="assets\images\logo.png" alt="COLMED Salud" width="20%" /> -->
                 </td>
             </thead>
-            <thead bgcolor="#00000" style="font-size:28px" align="center">
+            <tr bgcolor="#00000" style="font-size:28px" align="center">
                 <td>
                     <font color="#FFFFFF"><b>TURNO </b></font>
                 </td>
@@ -30,7 +31,7 @@ include('fn/conexion.php');
                 <td>
                     <font color="#FFFFFF"><b>SECTOR</b></font>
                 </td>
-            </thead>
+            </tr>
 
             <?PHP
             /*$result=mysqli_query("SELECT * FROM ti_turnos WHERE ti_turnos.puesto != '' AND ti_turnos.id != 0 order by id_row DESC limit 1 "); 
