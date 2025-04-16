@@ -78,8 +78,8 @@ include('fn/conexion.php');
                                 <form action="consulta_nro.php?tipo=I&user=<? echo $row["credencial"]; ?>&dni=<? echo $dni; ?>" name="formu" method="POST">
                                     <?PHP } else {
 
-                                    if ($row['lab_cod'] == "1" or $row['lab_cod'] == "2" or $row['lab_cod'] == "3" or $row['lab_cod'] == "9") { ?>
-
+                                    if ($row['lab_cod'] == "100") { ?>
+                                        <!-- if ($row['lab_cod'] == "1" or $row['lab_cod'] == "2" or $row['lab_cod'] == "3" or $row['lab_cod'] == "9") { ?> -->
                                         <script>
                                             function envio() {
                                                 document.formu.submit()
@@ -92,24 +92,28 @@ include('fn/conexion.php');
                                             <?PHP } else { ?>
 
                                                 <div class="mbr-section-btn">
-                                                    <a class="btn btn-md btn-info display-4" href="consulta_nro.php?tipo=A&user=<? echo $row["credencial"]; ?>&dni=<? echo $dni; ?>">
+                                                    <a class="btn btn-md btn-info display-4 btn-uniform" href="consulta_nro.php?tipo=A&user=<? echo $row["credencial"]; ?>&dni=<? echo $dni; ?>">
                                                         Turno Autorizaciones
                                                     </a>
                                                     <br>
-                                                    <a class="btn btn-md btn-primary display-4" href="consulta_nro.php?tipo=V&user=<? echo $row["credencial"]; ?>&dni=<? echo $dni; ?>">
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;Otras Gestiones&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <a class="btn btn-md btn-white display-4 btn-uniform" href="consulta_nro.php?tipo=R&user=<? echo $row["credencial"]; ?>&dni=<? echo $dni; ?>">
+                                                        Reintegros
                                                     </a>
                                                     <br>
-                                                    <a class="btn btn-md btn-warning display-4" href="consulta_afiliado_facturas.php?user=<? echo $row["credencial"]; ?>&dni=<? echo $dni; ?>">
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mis Facturas&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <a class="btn btn-md btn-primary display-4 btn-uniform" href="consulta_nro.php?tipo=V&user=<? echo $row["credencial"]; ?>&dni=<? echo $dni; ?>">
+                                                        Otras Gestiones
+                                                    </a>
+                                                    <br>
+                                                    <a class="btn btn-md btn-warning display-4 btn-uniform" href="consulta_afiliado_facturas.php?user=<? echo $row["credencial"]; ?>&dni=<? echo $dni; ?>">
+                                                        Mis Facturas
                                                     </a>
 
                                                     <!-- <a class="btn btn-md btn-warning display-4" href="consulta_afiliado_resumen.php?user=<? echo $row["credencial"]; ?>&dni=<? echo $dni; ?>">
                                                         Resumen de Cuenta
                                                     </a> -->
                                                     <br>
-                                                    <a class="btn btn-md btn-white-outline display-4" href="menu.php">
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Salir&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <a class="btn btn-md btn-white-outline display-4 btn-uniform" href="menu.php">
+                                                        Salir
                                                     </a>
                                                 </div>
                                             <?PHP } ?>

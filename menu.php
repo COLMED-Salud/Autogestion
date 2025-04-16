@@ -34,16 +34,16 @@
             Bienvenido</h1>
 
           <div class="mbr-section-btn">
-            <a class="btn btn-md btn-info display-4" href="ingreso.php">
-              &nbsp;&nbsp;Soy Afiliado de COLMED&nbsp;&nbsp;
+            <a class="btn btn-md btn-info display-4 btn-uniform" href="ingreso.php">
+              Soy Afiliado de COLMED
             </a>
-
-            <a class="btn btn-md btn-primary display-4" href="ingreso.php">
+            <br>
+            <!-- <a class="btn btn-md btn-primary display-4" href="ingreso.php">
               Empleado Colegio Médico
-            </a>
-
-            <a class="btn btn-md btn-warning display-4" href="consulta_nro.php?tipo=C&user=&dni=">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quiero Ser Afiliado&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </a> -->
+            <br>
+            <a class="btn btn-md btn-warning display-4 btn-uniform" href="consulta_nro.php?tipo=C&user=&dni=">
+              Quiero Ser Afiliado
             </a>
 
             <!-- a class="btn btn-md btn-white-outline display-4" href="ingreso.php">
