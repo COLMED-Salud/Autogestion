@@ -192,6 +192,40 @@
 	background-color: #999;
 }
 
+.buttons {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: 390px;
+}
+
+.btn {
+	padding: 20px;
+	border: none;
+	border-radius: 10px;
+	font-size: 22px;
+	font-weight: bold;
+	color: white;
+	cursor: pointer;
+	transition: transform 0.2s, box-shadow 0.2s;
+	text-decoration: none;
+}
+
+.btn:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn-green {
+	background-color: #4CAF50;
+	/* Verde manzana */
+}
+
+.btn-blue {
+	background-color: #2196F3;
+	/* Azul */
+}
+
 body {
 	/**background-image:url(../assets\images\fondo.jpg); */
 	background-color: #FFF;

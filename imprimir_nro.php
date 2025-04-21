@@ -95,7 +95,7 @@ include('fn/conexion.php');
 
             <tr>
                 <td colspan="3" style="font-size:15px" align="center">
-                    <input style="font-size:25px;width:100%" type='button' value='Volver' onClick="location.replace('menu.php');" class="button" />
+                    <input style="font-size:25px;width:100%" type='button' value='Volver' onClick="location.replace('menu.html');" class="button" />
                 </td>
             </tr>
 
@@ -122,7 +122,7 @@ include('fn/conexion.php');
             </tr>
 
             <tr>
-                <td colspan="3" align="center"><img src="assets\images\flechaabajo.gif" alt="TICKET" width="60%" /></td>
+                <td colspan="3" align="center"><img src="assets\images\flechaabajo.gif" alt="TICKET" width="30%" /></td>
             </tr>
         </table>
         <br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>

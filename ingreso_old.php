@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <META HTTP-EQUIV="Refresh" CONTENT="60; URL=menu.php">
+    <META HTTP-EQUIV="Refresh" CONTENT="60; URL=menu.html">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="assets/css/estilo.css" TYPE="text/css" MEDIA=screen />
     <title>Autogestion de Afiliados</title>
@@ -80,7 +80,7 @@
 
     <tr>
         <th colspan="3" align="center">
-            <input style="font-size:30px;width:100%" type='button' value='Volver' onClick="location.replace('menu.php');" class="button" />
+            <input style="font-size:30px;width:100%" type='button' value='Volver' onClick="location.replace('menu.html');" class="button" />
         </th>
     </tr>
     <tr>

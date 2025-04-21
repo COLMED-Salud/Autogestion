@@ -1,11 +1,7 @@
-<?PHP
-include('fn/conexion.php');
-?>
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
-  <meta http-equiv="Refresh" CONTENT="50; URL=menu.html">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portal de Afiliados</title>
@@ -101,18 +97,6 @@ include('fn/conexion.php');
       color: #666;
     }
 
-    .titulo {
-      width: 200px;
-      height: 200px;
-      margin: 0 auto 40px;
-      border-radius: 10px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 24px;
-      color: #666;
-    }
-
     .buttons {
       display: flex;
       flex-direction: column;
@@ -154,13 +138,6 @@ include('fn/conexion.php');
         margin-bottom: 30px;
       }
 
-      .titulo {
-        width: 350px;
-        height: 150px;
-        margin-bottom: 30px;
-      }
-
-
       .btn {
         padding: 15px;
         font-size: 20px;
@@ -173,13 +150,7 @@ include('fn/conexion.php');
       }
 
       .logo {
-        width: 200px;
-        height: 100px;
-        margin-bottom: 20px;
-      }
-
-      .titulo {
-        width: 300px;
+        width: 100px;
         height: 100px;
         margin-bottom: 20px;
       }
@@ -201,62 +172,23 @@ include('fn/conexion.php');
 
 <body>
   <div class="background">
+    <!-- <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div> -->
   </div>
+
   <div class="container">
-    <?PHP
-
-    if (strlen($_REQUEST['user']) > 8) {
-
-      $credencial_tit = substr($_REQUEST['user'], 0, 10) . "00";
-      //echo $credencial_tit;
-      $result = mysqli_query($conexion, "SELECT * FROM afiliados WHERE afiliados.credencial = '$credencial_tit' AND afiliados.abm != 'Baja' ");
-    } else {
-      $result = mysqli_query($conexion, "SELECT * FROM afiliados WHERE afiliados.nro_doc = '$_REQUEST[user]' AND afiliados.abm != 'Baja' ");
-      //$result=mysqli_query("SELECT * FROM afiliados_grupo WHERE afiliados_grupo.nro_doc = '$_REQUEST[user]' ");				
-    }
-
-    if (mysqli_num_rows($result) > 0) {
-
-      $row = mysqli_fetch_array($result);
-
-      $dni = $row['nro_doc'];
-
-      if ($row['sis'] == "P") {
-        $sistema = "Prepaga";
-      };
-
-      if ($row['sis'] == "C") {
-        $sistema = "Coseguro";
-      };
-
-      if ($row['sis'] == "O") {
-        $sistema = "Obra Social";
-      };
-    ?>
-
-      <div class="titulo">
-        <?PHP echo $row['apynom']; ?>
-        <br>
-        <?PHP echo $sistema . " - Plan " . $row['plan']; ?>
-      </div>
-      <div class="buttons">
-        <a class="btn btn-blue" href="consulta_nro.php?tipo=A&user=<? echo $row["credencial"]; ?>&dni=<? echo $dni; ?>">Turno Autorizaciones</a>
-        <a class="btn btn-blue" href="consulta_nro.php?tipo=R&user=<? echo $row["credencial"]; ?>&dni=<? echo $dni; ?>">Reintegros</a>
-        <a class="btn btn-blue" href="consulta_nro.php?tipo=V&user=<? echo $row["credencial"]; ?>&dni=<? echo $dni; ?>">Otras Gestiones</a>
-        <a class="btn btn-green" href="ingreso.php">Volver</a>
-      </div>
-    <?PHP } else { ?>
-      <div class="logo">
-        Afiliado no encontrado
-      </div>
-      <div class="buttons">
-        <a class="btn btn-green" href="ingreso.php">Volver</a>
-      </div>
-
-    <?PHP } ?>
+    <div class="logo">
+      <img src="assets/images/logo.png" alt="COLMED Salud" />
+    </div>
+    <div class="buttons">
+      <a class="btn btn-green" href="ingreso.php">Soy
+        Afiliado</a>
+      <a class="btn btn-blue" href="consulta_nro.php?tipo=C&user=&dni=">
+        Quiero Ser Afiliado
+      </a>
+    </div>
   </div>
-
-
 </body>
 
 </html>

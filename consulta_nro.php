@@ -49,7 +49,7 @@ VALUES ('$id_tipo', '$id_nro', '$periodo_a', '$periodo_m', '$actual', '$credenci
     <img src="assets\images\icon_atencion.png" alt="Atencion" width="10%"/><br>
     <font size="1">No se encontraron datos!</font>
     <hr>
-	<input type ='button' value = 'Volver' onClick="location.replace('menu.php');" class="button"/>
+	<input type ='button' value = 'Volver' onClick="location.replace('menu.html');" class="button"/>
     <body onload="envio()">	
 	</div> 
 <?PHP // } 
