@@ -37,47 +37,6 @@ include('fn/conexion.php');
       overflow: hidden;
     }
 
-    .wave {
-      position: absolute;
-      width: 200%;
-      height: 200%;
-      opacity: 0.5;
-    }
-
-    .wave1 {
-      background: linear-gradient(45deg, transparent 45%, #4CAF50 45%, #4CAF50 55%, transparent 55%);
-      background-size: 60px 60px;
-      animation: wave 15s linear infinite;
-      top: -50%;
-      left: -50%;
-    }
-
-    .wave2 {
-      background: linear-gradient(135deg, transparent 45%, #66BB6A 45%, #66BB6A 55%, transparent 55%);
-      background-size: 80px 80px;
-      animation: wave 20s linear infinite;
-      top: -50%;
-      left: -50%;
-    }
-
-    .wave3 {
-      background: linear-gradient(225deg, transparent 45%, #81C784 45%, #81C784 55%, transparent 55%);
-      background-size: 100px 100px;
-      animation: wave 25s linear infinite;
-      top: -50%;
-      left: -50%;
-    }
-
-    @keyframes wave {
-      0% {
-        transform: rotate(0deg);
-      }
-
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-
     .container {
       background-color: rgba(255, 255, 255, 0.85);
       border-radius: 20px;
@@ -85,7 +44,7 @@ include('fn/conexion.php');
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
       text-align: center;
       max-width: 90%;
-      width: 500px;
+      width: 620px;
       z-index: 1;
     }
 

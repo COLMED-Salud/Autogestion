@@ -12,7 +12,7 @@
 
 <body background="assets/images/wallp_bloqueo.jpg">
     <div align="center">
-        <img src="assets/images/logo.png" alt="COLMED SALUD" width="20%" />
+        <img src="assets/images/logo_blanco.png" alt="COLMED SALUD" width="20%" />
     </div>
     <div align="center">
         <div id="pinpad" align="center">
