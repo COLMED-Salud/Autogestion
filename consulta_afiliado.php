@@ -168,9 +168,9 @@ include('fn/conexion.php');
 
       $credencial_tit = substr($_REQUEST['user'], 0, 10) . "00";
       //echo $credencial_tit;
-      $result = mysqli_query($conexion, "SELECT * FROM afiliados WHERE afiliados.credencial = '$credencial_tit' AND afiliados.abm != 'Baja' ");
+      $result = mysqli_query($conexion, "SELECT * FROM afiliados_grupo_vista WHERE afiliados_grupo_vista.credencial = '$credencial_tit' AND afiliados_grupo_vista.abm != 'Baja' ");
     } else {
-      $result = mysqli_query($conexion, "SELECT * FROM afiliados WHERE afiliados.nro_doc = '$_REQUEST[user]' AND afiliados.abm != 'Baja' ");
+      $result = mysqli_query($conexion, "SELECT * FROM afiliados_grupo_vista WHERE afiliados_grupo_vista.nro_doc = '$_REQUEST[user]' AND afiliados_grupo_vista.abm != 'Baja' ");
       //$result=mysqli_query("SELECT * FROM afiliados_grupo WHERE afiliados_grupo.nro_doc = '$_REQUEST[user]' ");				
     }
 
